@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+  abc:
+    build:
+      context: /abc
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"

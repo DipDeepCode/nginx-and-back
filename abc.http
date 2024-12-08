@@ -1,0 +1,8 @@
+###
+# @no-log
+GET http://localhost:80/backend
+
+###
+# @no-log
+GET http://localhost:8080
+
