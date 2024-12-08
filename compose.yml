@@ -12,5 +12,3 @@ services:
       context: /abc
       dockerfile: Dockerfile
     container_name: abc
-    ports:
-      - "8080:8080"
