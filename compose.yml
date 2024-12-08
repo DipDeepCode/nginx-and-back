@@ -1,6 +1,7 @@
 services:
   nginx:
     image: nginx:latest
+    container_name: nginx
     ports:
       - "80:80"
     volumes:
@@ -10,5 +11,6 @@ services:
     build:
       context: /abc
       dockerfile: Dockerfile
+    container_name: abc
     ports:
       - "8080:8080"
